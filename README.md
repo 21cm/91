@@ -18,4 +18,4 @@ $ https://github.com/21cm/91
 
 ## 二、效果图
 
-![效果图](https://i.loli.net/2019/03/04/5c7c8f79ea3a8.png)
+![效果图](https://i.loli.net/2019/03/04/5c7c920fa8b92.png)
