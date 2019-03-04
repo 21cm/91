@@ -39,6 +39,7 @@ while flag<=100:
             t=tittle[0].replace(' ','')
         except IndexError:
         if os.path.exists(str(t))==False:
+            print("出错了")
             try:
                 os.makedirs(str(t))
                 print(t)
