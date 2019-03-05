@@ -1,3 +1,5 @@
+# by 21cm
+# https://github.com/21cm/91
 import requests
 import os, re, time, random
 def download_mp4(url,dir):
@@ -38,19 +40,19 @@ while flag<=100:
             tittle[0]=t.replace('\n','')
             t=tittle[0].replace(' ','')
         except IndexError:
-        if os.path.exists(str(t))==False:
-            print("出错了")
-            try:
-                os.makedirs(str(t))
-                print(t)
-                print('开始下载:'+str(t))
-                download_img(str(img_url[0]),str(t))
-                download_mp4(str(video_url[0]),str(t))
-                print('下载完成')
-            except:
-                pass
-        else:
-            print('已存在文件夹,跳过')
-            time.sleep(2)
+            if os.path.exists(str(t))==False:
+                print("出错了")
+                try:
+                    os.makedirs(str(t))
+                    print(t)
+                    print('开始下载:'+str(t))
+                    download_img(str(img_url[0]),str(t))
+                    download_mp4(str(video_url[0]),str(t))
+                    print('下载完成')
+                except:
+                    pass
+            else:
+                print('已存在文件夹,跳过')
+                time.sleep(2)
     flag=flag+1
     print('此页已下载完成，下一页是'+str(flag))
